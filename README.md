@@ -7,6 +7,7 @@ When you run the command `/sc <message>` it presents your message in the in-game
 ## Commands
 
 `/sc <message>` - Requires `StaffChat.View` permission.
+`/sc-toggle` - Requires `StaffChat.View` permission. (Toggles Staff Chat on or off)
 
 ## Example
 
