@@ -1,9 +1,10 @@
-name 'BreezyStaffChat'
-description 'Staff Chat resource.'
-author 'Breezy#0001'
+author "Breezy#0001"
+description "Staff Chat resource."
 version "1.3"
-fx_version 'cerulean'
-games { 'rdr3', 'gta5' }
+
+fx_version "cerulean"
+game "gta5"
+
 
 server_script 'server.lua'
 
