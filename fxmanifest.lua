@@ -2,10 +2,9 @@ fx_version 'cerulean'
 games { 'rdr3', 'gta5' }
 
 name 'BreezyStaffChat'
-description 'A simple staff chat. /sc <message>'
+description 'Staff Chat resource.'
 author 'Breezy#0001'
-version 'v1.0.0'
-version '1.0'
+version "1.3"
 
 server_script 'server.lua'
 

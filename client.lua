@@ -1,7 +1,7 @@
 --================================--
---      BreezyStaffChat 1.1       --
+--      BreezyStaffChat 1.0       --
 --      by DevBreezy              --
---		License: GNU GPL 3.0      --
+--		MIT License				  --
 --================================--
 
 
@@ -33,12 +33,16 @@ RegisterCommand("sc-toggle", function(source, args, rawCommand)
 		if SCActive then
 			SCActive = false
 			TriggerEvent('chatMessage', '', {255, 255, 255}, '^3[^1Staff Chat^3] ^3You will no longer receive new messages from Staff Chat. Status: ^1Disabled')
+			TriggerEvent('DiscordChatRoles:StaffChat:Toggle')
 		else
 			SCActive = true
 			TriggerEvent('chatMessage', '', {255, 255, 255}, '^3[^1Staff Chat^3] ^3You will now receive new messages from Staff Chat. Status: ^2Enabled')
+			TriggerEvent('DiscordChatRoles:StaffChat:Toggle')
 		end
 	else
-		TriggerEvent('chatMessage', '', {255, 255, 255}, '^3[^1Staff Chat^3] You do not have permission to run this command.')
+		TriggerEvent('chatMessage', '', {255, 255, 255}, '^3[^1Noir Roleplay^3] You do not have permission to run this command.')
 	end
 end)
+
+
 
