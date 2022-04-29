@@ -1,4 +1,4 @@
-# Breezy Staff Chat
+# S-StaffChat
 
 ## What is it?
 
@@ -24,6 +24,6 @@ You can configure the prefix to match your server name or leave it the way it is
 
 
 ## Download
-https://github.com/DevBreezy/BreezyStaffChat
+https://github.com/DevSmurk/S-StaffChat
 
 
