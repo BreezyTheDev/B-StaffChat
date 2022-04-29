@@ -1,6 +1,6 @@
 --================================--
---      BreezyStaffChat 1.0       --
---      by DevBreezy              --
+--      S-StaffChat 1.0       --
+--      by DevSmurk             --
 --		MIT License				  --
 --================================--
 
@@ -105,7 +105,7 @@ AddEventHandler("BreezyStaffChat:checkPerms", function()
     end
 end)
 
-expectedName = "BreezyStaffChat" -- This is the resource and is not suggested to be changed.
+expectedName = "S-StaffChat" -- This is the resource and is not suggested to be changed.
 resource = GetCurrentResourceName()
 
 -- check if resource is renamed
@@ -118,7 +118,7 @@ end
 print("^0This resource is created by ^5Breezy#0001 ^0for support you can join the ^5discord: ^0https://discord.gg/zzUfkfRHzP")
 
 -- check if resource version is up to date
-PerformHttpRequest("https://raw.githubusercontent.com/DevBreezy/BreezyStaffChat/main/fxmanifest.lua", function(error, res, head)
+PerformHttpRequest("https://raw.githubusercontent.com/DevSmurk/S-StaffChat/main/fxmanifest.lua", function(error, res, head)
     i, j = string.find(tostring(res), "version")
     res = string.sub(tostring(res), i, j + 6)
     res = string.gsub(res, "version ", "")
@@ -129,7 +129,7 @@ PerformHttpRequest("https://raw.githubusercontent.com/DevBreezy/BreezyStaffChat/
     if verFile then
         if tonumber(verFile) < resp then
             print("^1[^4" .. expectedName .. "^1] WARNING^0")
-            print("^4" .. expectedName .. " ^0is outdated. Please update it from ^5https://github.com/DevBreezy/BreezyStaffChat^0| Current Version: ^1" .. verFile .. " ^0| New Version: ^2" .. resp .. " ^0|")
+            print("^4" .. expectedName .. " ^0is outdated. Please update it from ^5https://github.com/DevSmurk/S-StaffChat^0| Current Version: ^1" .. verFile .. " ^0| New Version: ^2" .. resp .. " ^0|")
         elseif tonumber(verFile) > tonumber(resp) then
             print("^1[^4" .. expectedName .. "^1] WARNING^0")
             print("^4" .. expectedName .. "s ^0version number is higher than we expected. | Current Version: ^3" .. verFile .. " ^0| Expected Version: ^2" .. resp .. " ^0|")
@@ -138,6 +138,6 @@ PerformHttpRequest("https://raw.githubusercontent.com/DevBreezy/BreezyStaffChat/
         end
     else
         print("^1[^4" .. expectedName .. "^1] WARNING^0")
-        print("You may not have the latest version of ^4" .. expectedName .. "^0. A newer, improved version may be present at ^5https://github.com/DevBreezy/BreezyStaffChat^0")
+        print("You may not have the latest version of ^4" .. expectedName .. "^0. A newer, improved version may be present at ^5https://github.com/DevSmurk/S-StaffChat^0")
     end
 end)
