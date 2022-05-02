@@ -24,6 +24,6 @@ You can configure the prefix to match your server name or leave it the way it is
 
 
 ## Download
-https://github.com/DevSmurk/S-StaffChat
+https://github.com/SmurkTheDev/S-StaffChat
 
 
