@@ -1,4 +1,4 @@
-# S-StaffChat
+# B-StaffChat
 
 ## What is it?
 
@@ -24,6 +24,6 @@ You can configure the prefix to match your server name or leave it the way it is
 
 
 ## Download
-https://github.com/SmurkTheDev/S-StaffChat
+https://github.com/BreezyTheDev/B-StaffChat
 
 
