@@ -5,7 +5,9 @@ version "2.0"
 fx_version "cerulean"
 game "gta5"
 
-server_script 'server.lua'
+server_scripts {
+    'config.lua',
+    'server.lua'
+}
 
-client_script 'client.lua'
-
+file 'style.css'
