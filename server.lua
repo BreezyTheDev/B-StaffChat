@@ -29,7 +29,7 @@ RegisterCommand("sc", function(source, args, rawCommand)
                             TriggerClientEvent("chat:addMessage", players[i], {
                                 color = {255, 0, 0},
                                 template = '<div style="padding: 0.5vw; margin: 0.5vw; background-color: rgba(186, 51, 187, 0.6); border-radius: 3px;"><i class="fas fa-shield-alt"></i> {0} {1}</div>',
-                                args = {"^0" .. "[" .. source .. "] " .. name .. ":" , message}
+                                args = {"^0" .. "[" .. player .. "] " .. name .. ":" , message}
                             })
                         else
                             TriggerClientEvent('chat:addMessage', players[i], {args = {Config.Prefix .. "^5" .. name ..": ^1"..message}})
